@@ -5,7 +5,7 @@
 ```text
 个人作品：企业级测试智能体工程复盘
 需求拆解｜Agent/Skill｜结构化协议｜Playwright执行与修复｜评测与Badcase
-GitHub：https://github.com/<你的账号>/enterprise-test-agent-case-study
+GitHub：https://github.com/zjjfhy/enterprise-test-agent-case-study
 ```
 
 ## 2. 简历项目末尾
@@ -23,13 +23,13 @@ GitHub：https://github.com/<你的账号>/enterprise-test-agent-case-study
 
 由于原项目涉及企业内部业务，本作品采用脱敏技术案例形式，不包含公司源代码、内部Prompt、客户数据、真实接口或工作截图。示例协议和Skill均为本人重新编写，用于展示通用的Agent工程设计与交付方法。
 
-作品链接：https://github.com/<你的账号>/enterprise-test-agent-case-study
+作品链接：https://github.com/zjjfhy/enterprise-test-agent-case-study
 ```
 
 ## 4. 邮件或招聘软件中的短说明
 
 ```text
-您好，我申请Agent应用/智能体交付方向岗位。我的主要经历包括企业级测试智能体、Text2SQL智能体以及大模型微调。由于公司项目无法开源，我整理了一份脱敏工程复盘，重点展示本人在需求拆解、Skill设计、结构化协议、自动执行、失败修复和评测方面的工作。作品链接：<链接>。
+您好，我申请Agent应用/智能体交付方向岗位。我的主要经历包括企业级测试智能体、Text2SQL智能体以及大模型微调。由于公司项目无法开源，我整理了一份脱敏工程复盘，重点展示本人在需求拆解、Skill设计、结构化协议、自动执行、失败修复和评测方面的工作。作品链接：https://github.com/zjjfhy/enterprise-test-agent-case-study。
 ```
 
 ## 5. 一分钟作品介绍
@@ -52,11 +52,10 @@ GitHub：https://github.com/<你的账号>/enterprise-test-agent-case-study
 
 ## 8. 发布后的最终检查
 
-- 将所有 `<你的账号>` 和 `<链接>` 替换为真实地址；
+- 确认简历、投递系统和沟通文案均使用当前公开仓库地址；
 - 检查仓库为公开状态，未登录浏览器也能访问；
 - 将仓库链接放在简历第一页姓名下方；
 - 用手机检查 Mermaid 图和表格是否正常显示；
 - 不在仓库提交当前简历中的手机号；
 - 确认 README 中的项目职责、时间线和指标与面试回答一致。
-
 
