@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "public-demo-1.0",
+  "caseId": "LOGIN-001",
+  "title": "使用有效账号成功登录",
+  "priority": "P0",
+  "objective": "验证有效用户可以进入演示系统首页",
+  "requirementRefs": [
+    {
+      "source": "public-demo-requirements.md",
+      "section": "2.1 用户登录"
+    }
+  ],
+  "preconditions": [
+    "演示系统可访问",
+    "测试账号处于启用状态"
+  ],
+  "testData": {
+    "usernameRef": "DEMO_USER",
+    "passwordRef": "DEMO_PASSWORD"
+  },
+  "steps": [
+    {
+      "stepId": "S1",
+      "description": "打开登录页面",
+      "expected": "页面显示用户名、密码输入框和登录按钮"
+    },
+    {
+      "stepId": "S2",
+      "description": "输入有效账号和密码并提交",
+      "expected": "系统完成认证并跳转至首页"
+    },
+    {
+      "stepId": "S3",
+      "description": "检查首页欢迎信息",
+      "expected": "页面显示当前测试用户的欢迎信息"
+    }
+  ],
+  "execution": {
+    "actions": [
+      {
+        "actionId": "A1",
+        "stepRef": "S1",
+        "type": "navigate",
+        "urlRef": "DEMO_BASE_URL/login"
+      },
+      {
+        "actionId": "A2",
+        "stepRef": "S2",
+        "type": "fill",
+        "target": {
+          "strategy": "label",
+          "value": "用户名"
+        },
+        "inputRef": "DEMO_USER"
+      },
+      {
+        "actionId": "A3",
+        "stepRef": "S2",
+        "type": "fill",
+        "target": {
+          "strategy": "label",
+          "value": "密码"
+        },
+        "inputRef": "DEMO_PASSWORD"
+      },
+      {
+        "actionId": "A4",
+        "stepRef": "S2",
+        "type": "click",
+        "target": {
+          "strategy": "role",
+          "role": "button",
+          "name": "登录"
+        }
+      },
+      {
+        "actionId": "A5",
+        "stepRef": "S2",
+        "type": "assert_url",
+        "pattern": "/home"
+      },
+      {
+        "actionId": "A6",
+        "stepRef": "S3",
+        "type": "assert_text",
+        "target": {
+          "strategy": "test_id",
+          "value": "welcome-message"
+        },
+        "textPattern": "欢迎"
+      }
+    ]
+  },
+  "manualReviewRequired": false,
+  "notes": "本用例使用引用而非明文保存测试凭据。"
+}
+
+
